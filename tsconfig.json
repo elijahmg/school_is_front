@@ -10,16 +10,24 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "isolatedModules": true,
+    "jsx": "react",
+    "sourceMap": true,
     "noEmit": true,
-    "jsx": "react"
+    "outDir": "build",
+    "typeRoots": [
+      "node_modules/@types", "typings"
+    ]
   },
+  "files": [
+    "typings/declarations.d.ts"
+  ],
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
