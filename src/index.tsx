@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Switch } from 'react-router';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, DefaultTheme, ThemeProvider } from 'styled-components';
 import { createBrowserHistory } from 'history';
 
 import { Routes } from './routes/index';
@@ -19,13 +19,22 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+const theme: any = {
+  colors: {
+    primaryButton: '#282c34',
+    secondaryButton: '#b01925',
+  }
+};
+
 const AppContainer: React.FC = () => (
+  <ThemeProvider theme={theme}>
     <Router history={history}>
       <GlobalStyle/>
       <Switch>
         <Routes/>
       </Switch>
     </Router>
+  </ThemeProvider>
 );
 
 ReactDOM.render(<AppContainer/>, document.getElementById('root'));

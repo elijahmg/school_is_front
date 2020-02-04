@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aacad0a6-d0ee-43b7-8ba5-6750a382cf80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/authorized.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +19,8 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -56,7 +50,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="ts.external.directory.path" value="C:\Users\ww\WebstormProjects\school_is_front\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -112,7 +106,7 @@
       <workItem from="1580761250203" duration="1085000" />
       <workItem from="1580762361257" duration="180000" />
       <workItem from="1580762566912" duration="1836000" />
-      <workItem from="1580845126522" duration="6870000" />
+      <workItem from="1580845126522" duration="13207000" />
     </task>
     <servers />
   </component>
@@ -123,15 +117,18 @@
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
       </list>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580850420147">
+    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580856338965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-561.-1080.2560.1040@0.0.1366.728" timestamp="1580297319534" />
-    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580850420147" />
+    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580856338965" />
     <state x="318" y="147" key="EditFileWatcherDialog" timestamp="1580247892963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -156,14 +153,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="217" key="GridCell.Tab.0.right/0.0.1366.728/-561.-1080.2560.1040@0.0.1366.728" timestamp="1580304820591" />
-    <state x="472" y="0" key="RollbackChangesDialog" timestamp="1580304384898">
+    <state x="472" y="0" key="RollbackChangesDialog" timestamp="1580856833297">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="472" y="0" key="RollbackChangesDialog/0.0.1366.728/-561.-1080.2560.1040@0.0.1366.728" timestamp="1580304384898" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1580762541425">
+    <state x="472" y="0" key="RollbackChangesDialog/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580856833297" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1580856886938">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580762541425" />
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580856886938" />
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580848153184">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
