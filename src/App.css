@@ -12,7 +12,6 @@
     animation: logo-spin infinite 5s linear;
   }
 }
-
 .header {
   min-height: 100vh;
   display: flex;
@@ -34,3 +33,5 @@
     transform: rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=App.css.map */

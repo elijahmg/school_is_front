@@ -1,28 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import styles from './App.scss';
-import { Wrapper } from './components/Button/index';
+import { Button } from './components/Button/index';
+import styled from 'styled-components';
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+`
 
 const App: React.FC = () => {
   return (
     <div className={styles.app}>
       <header className={styles.header}>
         <img src={logo} className={styles.logo} alt="logo" />
-        <Wrapper>
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </Wrapper>
+        <ButtonWrapper>
+          <Button>Sign In</Button>
+          <Button secondary>Sign up</Button>
+        </ButtonWrapper>
       </header>
     </div>
   );
-}
+};
 
 export default App;

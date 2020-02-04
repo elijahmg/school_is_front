@@ -1,9 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
+import { Router, Switch } from 'react-router';
+import { createGlobalStyle } from 'styled-components';
+import { createBrowserHistory } from 'history';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Routes } from './routes/index';
+
+import './index.scss';
+
+const history = createBrowserHistory();
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: Oswald, sans-serif;
+  }
+  body {
+    margin: 0;
+  }
+`
+
+const AppContainer: React.FC = () => (
+    <Router history={history}>
+      <GlobalStyle/>
+      <Switch>
+        <Routes/>
+      </Switch>
+    </Router>
+);
+
+ReactDOM.render(<AppContainer/>, document.getElementById('root'));
 
 declare const module: any;
 
