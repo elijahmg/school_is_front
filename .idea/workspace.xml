@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aacad0a6-d0ee-43b7-8ba5-6750a382cf80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/TextField/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,9 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -50,7 +54,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\ww\WebstormProjects\school_is_front\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -106,7 +110,8 @@
       <workItem from="1580761250203" duration="1085000" />
       <workItem from="1580762361257" duration="180000" />
       <workItem from="1580762566912" duration="1836000" />
-      <workItem from="1580845126522" duration="13207000" />
+      <workItem from="1580845126522" duration="13322000" />
+      <workItem from="1580930987323" duration="8212000" />
     </task>
     <servers />
   </component>
@@ -114,12 +119,9 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
       </list>
     </option>
   </component>
@@ -158,17 +160,28 @@
     </state>
     <state x="472" y="0" key="RollbackChangesDialog/0.0.1366.728/-561.-1080.2560.1040@0.0.1366.728" timestamp="1580304384898" />
     <state x="472" y="0" key="RollbackChangesDialog/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580856833297" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1580856886938">
+    <state x="184" y="7" key="SettingsEditor" timestamp="1580935401376">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580856886938" />
-    <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580848153184">
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580935401376" />
+    <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580939012452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/1366.-325.1920.1040@0.0.1366.728" timestamp="1580848153184" />
-    <state x="369" y="100" width="627" height="528" key="find.popup" timestamp="1580479705983">
+    <state x="329" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1580939012452" />
+    <state x="369" y="100" width="627" height="528" key="find.popup" timestamp="1580938705778">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="369" y="100" width="627" height="528" key="find.popup/0.0.1366.728/-561.-1080.2560.1040@0.0.1366.728" timestamp="1580479705983" />
+    <state x="369" y="100" width="627" height="528" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1580938705778" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1580933073951">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580933073951" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580934132616">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580934132616" />
   </component>
 </project>

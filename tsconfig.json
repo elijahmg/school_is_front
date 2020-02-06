@@ -11,12 +11,15 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "es6",
+    "module": "esnext",
     "isolatedModules": true,
     "jsx": "react",
     "sourceMap": true,
-    "noEmit": true,
     "outDir": "build",
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true,
     "typeRoots": [
       "node_modules/@types", "typings"
     ]

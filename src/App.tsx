@@ -1,27 +1,72 @@
 import React from 'react';
-import logo from './logo.svg';
-import styles from './App.scss';
-import { Button } from './components/Button/index';
+//@ts-ignore
+import { Card, CardActionArea } from '@material-ui/core';
 import styled from 'styled-components';
 
-const ButtonWrapper = styled.div`
+import { Button } from './components/Button';
+import { TextField } from './components/TextField';
+
+import { makeStyles } from '@material-ui/core/styles';
+
+
+const FormContainer = styled.div`
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
+  align-items: center;
+`;
+
+const FieldsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
   flex-direction: row;
-`
+  justify-content: center;
+  align-items: center;
+`;
+
+const CardHeader = styled.span`
+  width: 100%;
+  height: 10vh;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+`;
+
+const useStyles = makeStyles({
+  root: {
+    minWidth: '300px',
+    minHeight: '450px',
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  }
+});
 
 const App: React.FC = () => {
+  const classes = useStyles();
+
   return (
-    <div className={styles.app}>
-      <header className={styles.header}>
-        <img src={logo} className={styles.logo} alt="logo" />
-        <ButtonWrapper>
-          <Button>Sign In</Button>
-          <Button secondary>Sign up</Button>
-        </ButtonWrapper>
-      </header>
-    </div>
+    <FormContainer>
+      <Card className={classes.root}>
+        <CardHeader>Sign in</CardHeader>
+        <FieldsContainer>
+          <TextField label="Login" type="text"/>
+          <TextField label="Password" type="text"/>
+        </FieldsContainer>
+        <ButtonContainer>
+          <Button>Login</Button>
+        </ButtonContainer>
+      </Card>
+    </FormContainer>
   );
 };
 

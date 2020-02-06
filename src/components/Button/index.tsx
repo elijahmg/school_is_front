@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-//@ts-ignore
 import { Button as MaterialButton } from '@material-ui/core';
 
 interface Props {
@@ -16,8 +15,8 @@ interface Props {
 export const Button = styled(MaterialButton)` 
     background-color: transparent !important;
     border: 3px solid ${(props: Props) => props.secondary ? props.theme.colors.secondaryButton : props.theme.colors.primaryButton} !important;
-    width: 20vw;
-    height: 4vh;
+    width: 120px;
+    height: 40px;
     border-radius: 17px !important;
     color: #282c34 !important;
     letter-spacing: 2px !important;

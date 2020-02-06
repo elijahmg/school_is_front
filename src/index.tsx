@@ -4,7 +4,7 @@ import { Router, Switch } from 'react-router';
 import { createGlobalStyle, DefaultTheme, ThemeProvider } from 'styled-components';
 import { createBrowserHistory } from 'history';
 
-import { Routes } from './routes/index';
+import { Routes } from './routes';
 
 import './index.scss';
 
@@ -16,12 +16,25 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;  
+    background: linear-gradient(45deg, rgba(187,213,159,1) 0%, rgba(154,213,92,1) 100%);
+  }
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  div#root {
+    height: 100%;
+    width: 100%;
   }
 `
 
 const theme: any = {
   colors: {
-    primaryButton: '#282c34',
+    primaryButton: '#9AD55C',
     secondaryButton: '#b01925',
   }
 };
