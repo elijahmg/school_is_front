@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { TextField as MaterialTextField, TextFieldProps, Input, InputProps } from '@material-ui/core';
 
 
-export const TextField_1 = styled(Input)`
+export const TextField_1 = styled(MaterialTextField)`
   display: flex;
   margin: 10px 0 !important;
   &:hover {
@@ -20,7 +20,7 @@ interface Props {
 
 }
 
-export class TextField extends React.Component<InputProps & Props> {
+export class TextField extends React.Component<TextFieldProps & Props> {
 
   render() {
 
