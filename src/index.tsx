@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Switch } from 'react-router';
-import { createGlobalStyle, DefaultTheme, ThemeProvider } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { createBrowserHistory } from 'history';
 
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from '@apollo/react-hooks';
+
 import { Routes } from './routes';
+
+import { TOKEN } from './utils/global.constants';
 
 import './index.scss';
 
@@ -39,15 +44,30 @@ const theme: any = {
   }
 };
 
+const client = new ApolloClient({
+  uri: 'http://localhost:3010/graphql',
+  request: (operation) => {
+    const token = localStorage.getItem(TOKEN);
+
+    operation.setContext({
+      headers: {
+        authorization: token ? `Bearer ${token}` : '',
+      },
+    });
+  }
+});
+
 const AppContainer: React.FC = () => (
-  <ThemeProvider theme={theme}>
-    <Router history={history}>
-      <GlobalStyle/>
-      <Switch>
-        <Routes/>
-      </Switch>
-    </Router>
-  </ThemeProvider>
+  <ApolloProvider client={client}>
+    <ThemeProvider theme={theme}>
+      <Router history={history}>
+        <GlobalStyle/>
+        <Switch>
+          <Routes/>
+        </Switch>
+      </Router>
+    </ThemeProvider>
+  </ApolloProvider>
 );
 
 ReactDOM.render(<AppContainer/>, document.getElementById('root'));
