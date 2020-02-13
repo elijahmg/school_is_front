@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardActionArea } from '@material-ui/core';
 import { useMutation } from '@apollo/react-hooks';
-
-import { get as g } from 'lodash';
-
 import styled from 'styled-components';
 
 import { Button } from '../../components/Button';
 import { TextField } from '../../components/TextField';
+
+import { login_login, loginVariables } from '../../schemaTypes';
 
 import { LOGIN } from '../../api/login';
 
@@ -57,23 +56,13 @@ const useStyles = makeStyles({
   }
 });
 
-interface UserLogin {
-  loginName: string,
-  password: string,
-}
-
-interface UserLoginResponse {
-  token: string,
-  loginName: string,
-}
-
 const App: React.FC = () => {
   const classes = useStyles();
 
   const [loginField, setLogin] = useState('');
   const [passwordField, setPassword] = useState('');
 
-  const [login, { data, error, loading }] = useMutation<{ input: UserLogin, login: UserLoginResponse }>(LOGIN, {
+  const [login, { data, error, loading }] = useMutation<{ input: loginVariables, login: login_login }>(LOGIN, {
     variables: {
       input: {
         loginName: loginField,

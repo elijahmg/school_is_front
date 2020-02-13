@@ -21,7 +21,9 @@
     "@types/react-router-dom": "^5.1.3",
     "@types/react-transition-group": "^4.2.3",
     "@types/styled-components": "^4.4.2",
+    "apollo": "^2.22.0",
     "apollo-boost": "^0.4.7",
+    "apollo-cli": "^0.4.0",
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",
@@ -50,7 +52,10 @@
     "webpack-dev-server": "^3.10.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.common.js --progress --color"
+    "start": "webpack-dev-server --config webpack.common.js --progress --color",
+    "schema:download": "apollo schema:download --endpoint=http://localhost:3010/graphql",
+    "codegen:generate": "apollo codegen:generate src/schemaTypes.ts --localSchemaFile=schema.json --includes=src/api/*.ts --target typescript --outputFlat",
+    "generate:types": "yarn run schema:download && yarn run codegen:generate"
   },
   "eslintConfig": {
     "extends": "react-app"
