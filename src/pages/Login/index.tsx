@@ -1,6 +1,9 @@
 import React, { useState, Component } from 'react';
+import { Redirect } from 'react-router';
+
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, CardActionArea } from '@material-ui/core';
+
 import { useMutation } from '@apollo/react-hooks';
 import styled from 'styled-components';
 
@@ -56,7 +59,7 @@ const useStyles = makeStyles({
   }
 });
 
-const App: React.FC = () => {
+const Login: React.FC = () => {
   const classes = useStyles();
 
   const [loginField, setLogin] = useState('');
@@ -73,6 +76,7 @@ const App: React.FC = () => {
 
   if (data) {
     localStorage.setItem(TOKEN, data.login.token);
+    return <Redirect to="/"/>;
   }
 
   return (
@@ -103,4 +107,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Login;

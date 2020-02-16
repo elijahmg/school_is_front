@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     height: 100%;
     width: 100%;  
-    background: linear-gradient(45deg, rgba(187,213,159,1) 0%, rgba(154,213,92,1) 100%);
+    background: linear-gradient(45deg, rgb(220,222,216) 0%, rgb(202,202,202) 100%);
   }
   html {
     height: 100%;
