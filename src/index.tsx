@@ -35,13 +35,13 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
   }
-`
+`;
 
 const theme: any = {
   colors: {
     primaryButton: '#9AD55C',
     secondaryButton: '#b01925',
-  }
+  },
 };
 
 const client = new ApolloClient({
@@ -54,7 +54,7 @@ const client = new ApolloClient({
         authorization: token ? `Bearer ${token}` : '',
       },
     });
-  }
+  },
 });
 
 const AppContainer: React.FC = () => (
